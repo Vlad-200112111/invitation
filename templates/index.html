@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="invitation">
+    <h3>Наша свадьба</h3>
+    <p>Дорогие друзья!</p>
+    <p>Приглашаем Вас на наш праздник - нашу свадьбу!</p>
+    <p>Мы будем счастливы видеть каждого из Вас!</p>
+</div>
+<div class="info">
+    <p>11 августа 2023</p>
+    <h3>Распорядок дня</h3>
+    <div class="info-item">
+        <img style="margin-bottom: 20px;" src="/static/images/ring.png">
+        <div class="info-caption">
+            <h4>Регистрация</h4>
+            <p>15.20 - Отдел ЗАГС Черновского района</p>
+            <p>Проспект Фадеева, 2</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <img src="/static/images/rest.png">
+        <div class="info-caption">
+            <h4>Торжественный банкет</h4>
+            <p>17.30 - ресторан</p>
+            <p>Проспект Фадеева, 2</p>
+        </div>
+    </div>
+</div>
+<div>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A476826c19f45fca0b47b80621b310931b2e6ec74826c225026ed74b2b38cbb30&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+</div>
+<div class="backgraund-block2">
+    <div class="overlay">
+        <div class="confirmation-block">
+            <h4>Подтверждение присутствия</h4>
+            <form id="confirmationForm">
+                <input type="hidden" name="name" value="" id="fullname">
+                <select name="status" required>
+                    <option value="Приду">Приду</option>
+                    <option value="К сожалению, не смогу">К сожалению, не смогу</option>
+                    <option value="Пока не могу ответить">Пока не могу ответить</option>
+                </select>
+                <input class="button" type="submit" value="Отправить">
+            </form>
+        </div>
+        <div class="timer" style="margin-bottom: 100px;">
+            <h4>До свадьбы осталось</h4>
+            <div class="timer__items">
+              <div class="timer__item timer__days">00</div>
+              <div class="timer__item timer__hours">00</div>
+              <div class="timer__item timer__minutes">00</div>
+              <div class="timer__item timer__seconds">00</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
