@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="generator-form">
+    <input type="text" id="inputUrl">
+    <button id="buttonGenerationUrl">Сгенерировать</button>
+</div>
+<div class="answer">
+    <h3>Ваша ссылка</h3>
+    <h6 style="font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="url"></h6>
+</div>
+<form id="confirmationForm" style="display: none">
+    <input type="hidden" id="fullname">
+    <div id="nameU"></div>
+
+</form>
+<div class="timer" style="margin-bottom: 100px;">
+    <h4>До свадьбы осталось</h4>
+    <div class="timer__items">
+        <div class="timer__item timer__days">00</div>
+        <div class="timer__item timer__hours">00</div>
+        <div class="timer__item timer__minutes">00</div>
+        <div class="timer__item timer__seconds">00</div>
+    </div>
+</div>
 
 {% endblock %}

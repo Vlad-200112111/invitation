@@ -6,9 +6,15 @@ from rest_framework.permissions import IsAuthenticated
 from .models import *
 from .serializers import *
 
+
 class InfoViewCreate(generics.CreateAPIView):
     queryset = Info.objects.all()
     serializer_class = InfoSerializer
 
+
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+
+class GeneratorView(TemplateView):
+    template_name = 'generator.html'
