@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static '/images/ring.png' %}">
 
     <title>Приглашение на свадьбу</title>
 
-    <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="/static/css/fonts.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <link rel="stylesheet" href="{% static '/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
 
 </head>
 <body>
@@ -19,7 +21,7 @@
         <div class="overlay-content">
             <h1>Владислав и Мария</h1>
             <h3>Мы женимся</h3>
-            <img src="/static/images/photo.png">
+            <img src="{% static '/images/photo.png' %}">
             <h4 style="margin-top: 20px">
                 11 августа 2023 года
             </h4>
@@ -34,8 +36,8 @@
 {% endblock %}
 
 
-<script src="/static/js/bootstrap.js"></script>
-<script src="/static/js/main.js"></script>
+<script src="{% static '/js/bootstrap.js' %}"></script>
+<script src="{% static '/js/main.js' %}"></script>
 
 </body>
 </html>
